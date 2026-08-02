@@ -1,0 +1,73 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  Unite Us published compliance and interoperability claims: uniteus.com/privacy/
+  (Privacy and Security page - HIPAA-compliant; HITRUST, SOC 2 Type 2, and NIST
+  CSF certifications), uniteus.com/solutions/interoperability/ and
+  uniteus.com/solutions/integrations/ (FHIR APIs, SMART on FHIR apps, HL7
+  protocols, Gravity Project data-standard alignment), and live probes of the
+  web hosts (no OIDC discovery, no security.txt).
+standards:
+  - id: hipaa
+    conforms: true
+    evidence: >-
+      Unite Us states the platform is HIPAA-compliant and protects all social
+      care information under the security standards required for PHI
+      (uniteus.com/privacy/).
+  - id: hitrust
+    conforms: true
+    evidence: HITRUST certification claimed on uniteus.com/privacy/.
+  - id: soc2
+    conforms: true
+    evidence: SOC 2 (Type 2) certification claimed on uniteus.com/privacy/.
+  - id: nist-csf
+    conforms: true
+    evidence: NIST CSF certification/alignment claimed on uniteus.com/privacy/.
+  - id: 42-cfr-part-2
+    conforms: true
+    evidence: >-
+      Heightened protections for information subject to 42 CFR Part 2 and other
+      federal/state protections are described on uniteus.com/privacy/.
+  - id: fhir
+    conforms: true
+    evidence: >-
+      Unite Us offers customizable FHIR APIs for EHR integration (screening,
+      referrals, outcomes) per uniteus.com/solutions/integrations/ and
+      uniteus.com/solutions/interoperability/. The FHIR API surface itself is
+      partner-gated; no public capability statement was found.
+  - id: smart-on-fhir
+    conforms: true
+    evidence: >-
+      SMART on FHIR apps embed Unite Us workflows in EHRs (Epic, Oracle,
+      Meditech named) with care-summary writeback
+      (uniteus.com/solutions/integrations/; docs.uniteus.com has a gated
+      "SMART app" documentation section).
+  - id: hl7
+    conforms: true
+    evidence: >-
+      HL7 protocols alongside FHIR/SMART on FHIR are named as integration
+      mechanisms (uniteus.com/solutions/integrations/).
+  - id: gravity-project
+    conforms: true
+    evidence: >-
+      Unite Us states alignment with national SDOH data standards developed by
+      the Gravity Project (uniteus.com/solutions/interoperability/).
+  - id: oidc
+    conforms: false
+    evidence: >-
+      No /.well-known/openid-configuration discovery document on uniteus.com,
+      docs.uniteus.com, or app.uniteus.io (the latter returns an SPA shell for
+      all paths).
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: No /.well-known/security.txt on any probed host.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: >-
+      No public API reference is available to verify error formats; API
+      documentation is gated to licensed network partners (docs.uniteus.com).
+notes: >-
+  Unite Us advertises real API surfaces (FHIR APIs, SMART on FHIR, HL7) but all
+  developer/API documentation is password-protected for licensed network
+  partners at docs.uniteus.com, so spec-level conformance could not be
+  verified publicly.

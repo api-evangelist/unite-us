@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+url: https://uniteus.com/privacy/
+certifications:
+  - HIPAA
+  - HITRUST
+  - SOC 2 Type 2
+  - NIST CSF
+evidence:
+  - source: https://uniteus.com/privacy/
+    kind: privacy-and-security-page
+    keywords: [hipaa, hitrust, soc 2, nist, consent, 42 cfr part 2]
+    note: >-
+      Unite Us "Privacy and Security" page states the platform is
+      HIPAA-compliant and HITRUST, SOC 2 (Type 2 logo shown), and NIST
+      certified; describes consent required and documented for every referral
+      (50+ languages), heightened protections for 42 CFR Part 2 data, and
+      links a downloadable Security Overview document
+      (uniteus.com/report/security-overview/, request form).
+notes: >-
+  Unite Us has no dedicated trust-center subdomain (trust.uniteus.com and
+  security.uniteus.com do not resolve; /trust and /security return 404); the
+  probe-security-programs.py fixed-path pass therefore found nothing. The
+  compliance posture above is published on the company's Privacy and Security
+  page, verified 2026-07-21. Compliance/privacy contact: compliance@uniteus.com,
+  (800) 461-9330 (from uniteus.com/privacy-policy/).

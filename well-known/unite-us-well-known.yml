@@ -1,0 +1,64 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the Unite Us web
+  hosts (uniteus.com, www.uniteus.com, docs.uniteus.com, app.uniteus.io). No
+  real well-known documents were found. app.uniteus.io answers 200 with a
+  text/html SPA shell for every path (verified: /.well-known/security.txt
+  returns the React app's index.html), so those are recorded as
+  present-but-not-a-real-document and not saved.
+hosts:
+  - host: https://uniteus.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: https://docs.uniteus.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: https://app.uniteus.io
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        type: text/html
+        note: SPA shell (React index.html), not a real security.txt; not saved.
+      - path: /.well-known/openid-configuration
+        status: 200
+        type: text/html
+        note: SPA shell, not a real OIDC discovery document; not saved.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        type: text/html
+        note: SPA shell, not a real document; not saved.
+      - path: /.well-known/api-catalog
+        status: 200
+        type: text/html
+        note: SPA shell, not a real API catalog; not saved.
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        type: text/html
+        note: SPA shell, not a real ai-plugin manifest; not saved.
+      - path: /llms.txt
+        status: 200
+        type: text/html
+        note: SPA shell, not a real llms.txt; not saved.

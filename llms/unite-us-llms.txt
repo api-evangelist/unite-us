@@ -1,0 +1,29 @@
+# Unite Us
+
+> Unite Us is the software and data infrastructure company for coordinating whole-person care across healthcare, government, and community-based organizations. Its platform screens people for social determinants of health (SDOH), sends closed-loop referrals to community services, and tracks outcomes. Integration with EHR and case-management systems (Epic, Oracle Health, Meditech, Salesforce) is offered through FHIR APIs, SMART on FHIR apps, and other HL7 protocols, aligned with Gravity Project data standards. The platform is HIPAA-compliant and HITRUST, SOC 2 Type 2, and NIST CSF certified.
+
+Unite Us does not publish a public API reference; API, integration, and release-note
+documentation is password-protected for licensed network partners at docs.uniteus.com.
+
+## Docs
+
+- [Documentation portal](https://docs.uniteus.com/): Partner-gated docs covering Platform, Insights, Integrations, Payments, Public Resource Directory, and the SMART app.
+- [Release notes](https://docs.uniteus.com/release-notes/): Product release notes (content gated to licensed partners).
+- [Help Center](https://support.uniteus.io/en/): Unite Us support and help center.
+- [Integrations](https://uniteus.com/solutions/integrations/): EHR integration via FHIR APIs and SMART on FHIR.
+- [Interoperability](https://uniteus.com/solutions/interoperability/): Standards alignment (FHIR, HL7, Gravity Project).
+- [Privacy and Security](https://uniteus.com/privacy/): HIPAA, HITRUST, SOC 2 Type 2, NIST CSF posture.
+
+## Platform
+
+- [Products](https://uniteus.com/products/): Closed-loop referrals, SDOH screening, insights/analytics, social care payments.
+- [Log in](https://app.uniteus.io/): Unite Us platform application.
+- [Register](https://app.uniteus.io/register): Account registration.
+
+## Catalog artifacts
+
+- [APIs.json profile](https://raw.githubusercontent.com/api-evangelist/unite-us/refs/heads/main/apis.yml): API Evangelist network profile for Unite Us.
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/unite-us/refs/heads/main/conformance/unite-us-conformance.yml): Published standards and compliance claims.
+- [Packages](https://raw.githubusercontent.com/api-evangelist/unite-us/refs/heads/main/packages/unite-us-packages.yml): First-party npm scope (@unite-us).
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/unite-us/refs/heads/main/security/unite-us-domain-security.yml): TLS/HSTS/SPF/DMARC probe results.
+- [Trust posture](https://raw.githubusercontent.com/api-evangelist/unite-us/refs/heads/main/security/unite-us-trust-center.yml): Certifications published by Unite Us.

@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  npm registry search for the @unite-us scope plus probes of PyPI
+  (pypi.org/pypi/uniteus - 404), RubyGems, and a GitHub org search. Unite Us
+  publishes no public client SDKs for consuming an API; the @unite-us npm scope
+  is first-party (maintainers carry uniteus.com identities) but its packages
+  are the company's own front-end application components, not API client
+  libraries.
+packages:
+  - language: javascript
+    registry: npm
+    name: '@unite-us/app-create-referral'
+    url: https://www.npmjs.com/package/@unite-us/app-create-referral
+    install: npm install @unite-us/app-create-referral
+    official: true
+    version: 0.15.148
+    last_published: '2026-07-21'
+    notes: >-
+      First-party Unite Us front-end package (referral-creation app component)
+      published from the company's @unite-us npm scope (~70 uniteus.com
+      maintainers, actively published). It is an internal/embedded application
+      module, not a public API client SDK, so it does not count as an SDK for
+      API consumers.
+notes: >-
+  No first-party API client SDKs found on npm, PyPI, Maven Central, NuGet,
+  pkg.go.dev, RubyGems, Packagist, or crates.io. The github.com/uniteus org is
+  an unrelated Czech company (uniteus.eu); no public GitHub org for Unite Us
+  (uniteus.com) was found.

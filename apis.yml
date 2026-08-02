@@ -1,9 +1,28 @@
 aid: unite-us
 name: Unite Us
-description: 'Unite Us is a company surfaced as a portfolio company of iconiq-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Unite Us is the software and data infrastructure company for coordinating
+  whole-person care across healthcare, government, and community-based
+  organizations. Its platform screens people for social determinants of health,
+  sends closed-loop referrals to community services, and tracks outcomes, with
+  EHR and case-management integrations (Epic, Oracle Health, Meditech,
+  Salesforce) delivered through FHIR APIs, SMART on FHIR apps, and other HL7
+  protocols aligned with Gravity Project standards. The platform is
+  HIPAA-compliant and HITRUST, SOC 2 Type 2, and NIST CSF certified. API and
+  integration documentation is gated to licensed network partners.
 url: https://raw.githubusercontent.com/api-evangelist/unite-us/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://docs.uniteus.com/wp-content/uploads/2022/08/cropped-favicon-01-270x270.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthcare
+- Social Care
+- SDOH
+- Referrals
+- Care Coordination
+- Interoperability
+- FHIR
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,40 @@ maintainers:
 common:
 - type: Website
   url: https://www.uniteus.com/
+- type: Documentation
+  url: https://docs.uniteus.com/
+- type: ChangeLog
+  url: https://docs.uniteus.com/release-notes/
+- type: Support
+  url: https://support.uniteus.io/en/
+- type: Blog
+  url: https://uniteus.com/blog/
+- type: Login
+  url: https://app.uniteus.io/
+- type: SignUp
+  url: https://app.uniteus.io/register
+- type: Contact
+  url: https://uniteus.com/contact/
+- type: TermsOfService
+  url: https://uniteus.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://uniteus.com/privacy-policy/
+- type: Compliance
+  url: https://uniteus.com/privacy/
+- type: TrustCenter
+  url: security/unite-us-trust-center.yml
+- type: Conformance
+  url: conformance/unite-us-conformance.yml
+- type: Packages
+  url: packages/unite-us-packages.yml
+- type: WellKnown
+  url: well-known/unite-us-well-known.yml
+- type: LLMsTxt
+  url: llms/unite-us-llms.txt
+- type: DomainSecurity
+  url: security/unite-us-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
